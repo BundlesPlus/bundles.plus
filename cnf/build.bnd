@@ -91,34 +91,34 @@ base.packages =  \
 	org.osgi.util.promise, \
 	org.osgi.util.tracker, \
 	org.slf4j, \
-	plus.bundles.authentication.api, \
-	plus.bundles.authorization.api, \
-	plus.bundles.capabilities, \
-	plus.bundles.configurer.api, \
-	plus.bundles.debug.api, \
-	plus.bundles.dto.api, \
-	plus.bundles.eventadminserversentevents.capabilities, \
-	plus.bundles.executor.capabilities, \
-	plus.bundles.github.angular_ui.capabilities, \
-	plus.bundles.google.angular.capabilities, \
-	plus.bundles.http.capabilities, \
-	plus.bundles.jsplumb.capabilities, \
-	plus.bundles.iot.admin.api, \
-	plus.bundles.iot.admin.dto, \
-	plus.bundles.iot.gpio.api, \
-	plus.bundles.iot.gpio.util, \
-	plus.bundles.jsonrpc.api, \
-	plus.bundles.jsonrpc.dto, \
-	plus.bundles.launch.api, \
-	plus.bundles.logger.api, \
-	plus.bundles.namespace, \
-	plus.bundles.rest.api,  \
-	plus.bundles.rootservlet.api, \
-	plus.bundles.scheduler.api, \
-	plus.bundles.servlet.api, \
-	plus.bundles.stackexchange.pagedown.capabilities, \
-	plus.bundles.twitter.bootstrap.capabilities, \
-	plus.bundles.webserver.capabilities
+	osgi.enroute.authentication.api, \
+	osgi.enroute.authorization.api, \
+	osgi.enroute.capabilities, \
+	osgi.enroute.configurer.api, \
+	osgi.enroute.debug.api, \
+	osgi.enroute.dto.api, \
+	osgi.enroute.eventadminserversentevents.capabilities, \
+	osgi.enroute.executor.capabilities, \
+	osgi.enroute.github.angular_ui.capabilities, \
+	osgi.enroute.google.angular.capabilities, \
+	osgi.enroute.http.capabilities, \
+	osgi.enroute.jsplumb.capabilities, \
+	osgi.enroute.iot.admin.api, \
+	osgi.enroute.iot.admin.dto, \
+	osgi.enroute.iot.gpio.api, \
+	osgi.enroute.iot.gpio.util, \
+	osgi.enroute.jsonrpc.api, \
+	osgi.enroute.jsonrpc.dto, \
+	osgi.enroute.launch.api, \
+	osgi.enroute.logger.api, \
+	osgi.enroute.namespace, \
+	osgi.enroute.rest.api,  \
+	osgi.enroute.rootservlet.api, \
+	osgi.enroute.scheduler.api, \
+	osgi.enroute.servlet.api, \
+	osgi.enroute.stackexchange.pagedown.capabilities, \
+	osgi.enroute.twitter.bootstrap.capabilities, \
+	osgi.enroute.webserver.capabilities
 
 
 -connection-settings: ${if;${pwd};server;-dummy};id=https://oss.sonatype.org;username=${usr};password=${pwd}, -bnd

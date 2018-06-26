@@ -3,7 +3,7 @@
 #
 
 
-Bundle-Description: Test case for osgi.enroute.web.simple.provider
+Bundle-Description: Test case for plus.bundles.web.simple.provider
 EnRoute-Application: org.enroute.web.simple.test
 
 Private-Package:  \
@@ -16,15 +16,15 @@ Conditional-Package: \
 -includeresource: static=static, configuration=configuration
 
 -buildpath: \
-	osgi.enroute.base.api;version=1.0,\
-	osgi.enroute.web.simple.provider;version=latest,\
+	plus.bundles.base.api;version=1.0,\
+	plus.bundles.web.simple.provider;version=latest,\
 	biz.aQute.bndlib;packages=*, \
-	osgi.enroute.junit.wrapper;version=4.12,\
+	plus.bundles.junit.wrapper;version=4.12,\
 	net.sourceforge.htmlunit;version=2.15
 
 -runrequires: \
-	osgi.identity;filter:='(osgi.identity=osgi.enroute.web.simple.test)',\
-	osgi.identity;filter:='(osgi.identity=osgi.enroute.webconsole.xray.provider)'
+	osgi.identity;filter:='(osgi.identity=plus.bundles.web.simple.test)',\
+	osgi.identity;filter:='(osgi.identity=plus.bundles.webconsole.xray.provider)'
 
 -runbundles: \
 	biz.aQute.bndlib;version='[3.0.0,3.0.1)',\
@@ -44,20 +44,20 @@ Conditional-Package: \
 	org.eclipse.equinox.metatype;version='[1.4.100,1.4.101)',\
 	org.osgi.service.event;version='[1.3.1,1.3.2)',\
 	org.osgi.service.metatype;version='[1.3.0,1.3.1)',\
-	osgi.enroute.bostock.d3.webresource;version=snapshot,\
-	osgi.enroute.configurer.simple.provider;version=snapshot,\
-	osgi.enroute.dtos.bndlib.provider;version=snapshot,\
-	osgi.enroute.executor.simple.provider;version=snapshot,\
-	osgi.enroute.github.angular-ui.webresource;version=snapshot,\
-	osgi.enroute.google.angular.webresource;version=snapshot,\
-	osgi.enroute.hamcrest.wrapper;version=snapshot,\
-	osgi.enroute.junit.wrapper;version=snapshot,\
-	osgi.enroute.logger.simple.provider;version=snapshot,\
-	osgi.enroute.stackexchange.pagedown.webresource;version=snapshot,\
-	osgi.enroute.twitter.bootstrap.webresource;version=snapshot,\
-	osgi.enroute.web.simple.provider;version=snapshot,\
-	osgi.enroute.web.simple.test;version=snapshot,\
-	osgi.enroute.webconsole.xray.provider;version=snapshot
+	plus.bundles.bostock.d3.webresource;version=snapshot,\
+	plus.bundles.configurer.simple.provider;version=snapshot,\
+	plus.bundles.dtos.bndlib.provider;version=snapshot,\
+	plus.bundles.executor.simple.provider;version=snapshot,\
+	plus.bundles.github.angular-ui.webresource;version=snapshot,\
+	plus.bundles.google.angular.webresource;version=snapshot,\
+	plus.bundles.hamcrest.wrapper;version=snapshot,\
+	plus.bundles.junit.wrapper;version=snapshot,\
+	plus.bundles.logger.simple.provider;version=snapshot,\
+	plus.bundles.stackexchange.pagedown.webresource;version=snapshot,\
+	plus.bundles.twitter.bootstrap.webresource;version=snapshot,\
+	plus.bundles.web.simple.provider;version=snapshot,\
+	plus.bundles.web.simple.test;version=snapshot,\
+	plus.bundles.webconsole.xray.provider;version=snapshot
 
 Require-Capability:		\
 	osgi.enroute.webresource; \
