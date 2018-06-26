@@ -19,7 +19,7 @@ Conditional-Package: \
 	plus.bundles.base.api;version=1.0,\
 	plus.bundles.web.simple.provider;version=latest,\
 	biz.aQute.bndlib;packages=*, \
-	plus.bundles.junit.wrapper;version=4.12,\
+	osgi.enroute.junit.wrapper;version=4.12,\
 	net.sourceforge.htmlunit;version=2.15
 
 -runrequires: \

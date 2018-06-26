@@ -7,11 +7,12 @@ Bundle-Description: 				\
 	OAuth2 tests
 
 Private-Package: \
-	plus.bundles.oauth2.basic.provider,\
-	plus.bundles.oauth2.app,\
-	plus.bundles.twitter.provider,\
-	plus.bundles.authenticator.github.provider,\
-	plus.bundles.twitter.provider.dto
+	osgi.enroute.oauth2.basic.provider,\
+	osgi.enroute.oauth2.app,\
+	osgi.enroute.twitter.provider,\
+	osgi.enroute.authenticator.github.provider,\
+	osgi.enroute.authenticator.servlet.provider,\
+	osgi.enroute.twitter.provider.dto
 
 Conditional-Package: aQute.lib*
 
@@ -23,7 +24,7 @@ Conditional-Package: aQute.lib*
 	org.apache.felix.gogo.runtime
 
 -testpath: \
-	plus.bundles.junit.wrapper;version=4.12
+	osgi.enroute.junit.wrapper;version=4.12
 
 -includeresource: {readme.md}, {static=static}, configuration=configuration
 

@@ -18,7 +18,7 @@ Export-Package: osgi.enroute.debug.api
 	plus.bundles.base.api;version=latest
 
 -testpath: \
-	plus.bundles.junit.wrapper
+	osgi.enroute.junit.wrapper
 
 
 -includeresource: {readme.md}, LICENSE.txt=${build}/licenses/ASL-2.0.txt

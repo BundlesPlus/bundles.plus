@@ -27,10 +27,10 @@ Conditional-Package: aQute.lib*
 	org.apache.felix.webconsole;version=4.2,\
 	org.apache.felix.scr;version=2.0,\
 	biz.aQute.bndlib;version=2.0;packages='aQute.lib.*,aQute.libg.*',\
-	plus.bundles.bostock.d3.webresource;version=latest
+	osgi.enroute.bostock.d3.webresource;version=latest
 
 -testpath: \
-	plus.bundles.junit.wrapper;version=4.12
+	osgi.enroute.junit.wrapper;version=4.12
 
 -includeresource: {readme.md}, {web=web}, xray.png
 

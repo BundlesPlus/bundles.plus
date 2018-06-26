@@ -24,8 +24,8 @@ Conditional-Package: aQute.lib*
 	plus.bundles.base.api;version=latest
 
 -testpath: \
-	plus.bundles.junit.wrapper, \
-	plus.bundles.hamcrest.wrapper, \
+	osgi.enroute.junit.wrapper, \
+	osgi.enroute.hamcrest.wrapper, \
 
 -includeresource: {readme.md}, LICENSE.txt=${build}/licenses/ASL-2.0.txt
 

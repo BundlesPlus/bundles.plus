@@ -24,7 +24,7 @@ Conditional-Package: aQute.lib*
 	biz.aQute.bndlib;packages=*
 
 -testpath: \
-	plus.bundles.junit.wrapper
+	osgi.enroute.junit.wrapper
 
 -includeresource: {readme.md}, static=static, LICENSE.txt=${build}/licenses/ASL-2.0.txt
 

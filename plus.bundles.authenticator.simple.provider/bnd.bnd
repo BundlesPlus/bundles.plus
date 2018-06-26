@@ -24,7 +24,7 @@ Import-Package: \
 	biz.aQute.bndlib;packages=*
 
 -testpath: \
-	plus.bundles.junit.wrapper
+	osgi.enroute.junit.wrapper
 
 -includeresource: {readme.md}
 

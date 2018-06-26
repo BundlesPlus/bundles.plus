@@ -44,7 +44,6 @@ import osgi.enroute.dto.api.DTOs;
 import osgi.enroute.oauth2.api.AuthorizationServer;
 import osgi.enroute.rest.api.REST;
 import osgi.enroute.rest.api.RESTRequest;
-import osgi.enroute.scheduler.api.Scheduler;
 
 @Designate(ocd=OAuth2BasicConfig.class, factory=true)
 @Component(scope = ServiceScope.BUNDLE, name = "osgi.enroute.oauth2.basic", configurationPolicy = ConfigurationPolicy.REQUIRE)
@@ -76,9 +75,6 @@ public class OAuth2Impl implements AuthorizationServer, Filter, REST {
 
 	@Reference
 	DTOs dtos;
-
-	@Reference
-	Scheduler scheduler;
 
 	public static class XAccessToken extends DTO implements Serializable {
 		private static final long serialVersionUID = 1L;
