@@ -1,0 +1,28 @@
+#
+# OSGI ENROUTE DTO BNDLIB PROVIDER BUNDLE
+#
+
+
+Bundle-Description: 				\
+	A provider of the DTOs service
+Export-Package:  \
+	osgi.enroute.dto.api;provide:=true
+
+Conditional-Package: aQute.lib*
+
+-workingset bundles,provider
+-buildpath:  \
+	plus.bundles.base.api;version=1.6,\
+	biz.aQute.bndlib;packages=*
+
+-testpath: \
+	plus.bundles.junit.wrapper
+
+-includeresource: {readme.md}, LICENSE.txt=${build}/licenses/ASL-2.0.txt
+
+
+-runrequires:  \
+	osgi.identity;filter:='(osgi.identity=plus.bundles.base.provider)'
+-runbundles:  \
+	plus.bundles.base.provider;version=latest
+Private-Package: osgi.enroute.dtos.bndlib.provider

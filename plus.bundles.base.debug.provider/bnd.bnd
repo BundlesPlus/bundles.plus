@@ -1,0 +1,30 @@
+#
+# OSGI ENROUTE BASE DEBUG PROVIDER BUNDLE
+#
+
+
+Bundle-Description: 				\
+	Provides Gogo shell commands that are quite se
+
+
+Private-Package:  \
+	osgi.enroute.base.debug.provider
+
+Export-Package: osgi.enroute.debug.api
+
+-workingset base,provider
+
+-buildpath:  \
+	plus.bundles.base.api;version=latest
+
+-testpath: \
+	plus.bundles.junit.wrapper
+
+
+-includeresource: {readme.md}, LICENSE.txt=${build}/licenses/ASL-2.0.txt
+
+
+-runrequires:  \
+	osgi.identity;filter:='(osgi.identity=plus.bundles.base.debug.provider)'
+-runbundles:  \
+	plus.bundles.base.debug.provider;version=latest

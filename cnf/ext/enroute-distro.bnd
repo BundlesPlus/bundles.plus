@@ -7,7 +7,7 @@
 -runfw: org.eclipse.osgi
 
 -runblacklist.enroute:	\
-	osgi.identity;filter:='(osgi.identity=osgi.enroute.base.api)', \
+	osgi.identity;filter:='(osgi.identity=plus.bundles.base.api)', \
 	osgi.identity;filter:='(osgi.identity=osgi.cmpn)', \
 	osgi.identity;filter:='(osgi.identity=osgi.core)', \
 	osgi.identity;filter:='(osgi.identity=biz.aQute.junit)', \
@@ -24,7 +24,7 @@
 	osgi.console=, \
 	org.osgi.service.http.port=8080
 
--runpath.eqnx: 					osgi.enroute.equinox.log.adapter
+-runpath.eqnx: 					plus.bundles.equinox.log.adapter
 -runrequires.eqnx: \
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.log)'
 
@@ -33,10 +33,10 @@
 -runsystemcapabilities.dflt: 	${native_capability}
 
 debug-bundles: \
-	osgi.identity;filter:='(osgi.identity=osgi.enroute.webconsole.xray.provider)',\
+	osgi.identity;filter:='(osgi.identity=plus.bundles.webconsole.xray.provider)',\
 	osgi.implementation;filter:='(osgi.implementation=osgi.metatype)',\
 	osgi.implementation;filter:='(osgi.implementation=osgi.log)',\
 	osgi.implementation;filter:='(osgi.implementation=osgi.event)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)', \
-	osgi.identity;filter:='(osgi.identity=osgi.enroute.base.debug.provider)'
+	osgi.identity;filter:='(osgi.identity=plus.bundles.base.debug.provider)'
